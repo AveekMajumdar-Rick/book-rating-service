@@ -19,7 +19,7 @@ public class BookRatingController {
 	@GetMapping("/{userId}")
 	public BookRatings getRating(@PathVariable("userId") Integer userId) {
 		BookRatings ratings = new BookRatings();
-		ratings.setRatings(new ArrayList<Rating>(Arrays.asList(new Rating(12, userId, 4), new Rating(14, userId, 2))));
+		ratings.setRatings(new ArrayList<Rating>(Arrays.asList(new Rating("zyTCAlFPjgYC", userId, 4), new Rating("BUZVAQAAQBAJ", userId, 3))));
 		return ratings;
 	}
 }
